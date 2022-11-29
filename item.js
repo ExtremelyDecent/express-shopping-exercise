@@ -14,8 +14,8 @@ class Item{
         return items;
     }
 
-    static updateItem(name, data){
-        let foundItem = Item.findAll(name);
+    static update(name, data){
+        let foundItem = Item.find(name);
         if (foundItem === undefined){
             throw{
                 message: "404! Not Found.",
